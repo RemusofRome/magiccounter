@@ -1,0 +1,53 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+        
+                <div class="home">
+                    <h3>Myself</h3>
+                        <div class="score">
+                            <h2 id="hscore"></h2>
+                        </div>
+                        <div>
+                            <button onclick="add1()"> - 1 </button>
+                            <button onclick="add2()"> - 2 </button>
+                            <button onclick="add3()"> - 3 </button>
+                            <button onclick="add5()"> - 5 </button>
+                            <button onclick="add10()"> - 10 </button>
+                            <button onclick="add15()"> - 15 </button>
+                        </div>
+                </div>
+            
+                <div class="guest">
+                    <h3>Opponent</h3>
+                        <div class="score">
+                            <h2 id="gscore"></h2>
+                        </div>
+                        <div>
+                            <button onclick="gadd1()"> - 1 </button>
+                            <button onclick="gadd2()"> - 2 </button>
+                            <button onclick="gadd3()"> - 3 </button>
+                            <button onclick="gadd5()"> - 5 </button>
+                            <button onclick="gadd10()"> - 10 </button>
+                            <button onclick="gadd15()"> - 15 </button>
+                        </div>
+                </div>
+        </div>
+            <div class="startbtncont">
+                <button class="startbtn" onclick="startbtn1()">Commander Start</button>
+                <button class="startbtn" onclick="startbtn2()">Normal Start</button>
+                
+            </div>
+        <button id="reset" onclick="reset()">
+            <p>Reset game</p>
+        </button>
+        
+        <script src="index.js"></script>
+    </body>
+</html>
